@@ -88,6 +88,19 @@ namespace FruityFramework.XamarinApp
             _reel1.PositionChanged+= ReelOnPositionChanged;
             _reel2.PositionChanged+= ReelOnPositionChanged;
             _reel3.PositionChanged+= ReelOnPositionChanged;
+
+            ReelOnPositionChanged(_reel1, new ReelPositionChangedEventArgs()
+            {
+                Current = _reel1.StartPosition
+            });
+            ReelOnPositionChanged(_reel2, new ReelPositionChangedEventArgs()
+            {
+                Current = _reel2.StartPosition
+            });
+            ReelOnPositionChanged(_reel3, new ReelPositionChangedEventArgs()
+            {
+                Current = _reel3.StartPosition
+            });
         }
     }
 }

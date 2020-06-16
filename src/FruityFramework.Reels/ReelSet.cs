@@ -32,7 +32,7 @@ namespace FruityFramework.Reels
                 Speed = ReelSpinSpeed.Normal,
                 Target = r,
                 MinRotations = 1,
-                StartDelay = i * 400
+                SpinDelay = i * 400
             });
             await SpinAll(optionsList.ToList().AsReadOnly());
         }

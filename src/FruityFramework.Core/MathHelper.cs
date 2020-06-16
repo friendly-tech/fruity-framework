@@ -32,6 +32,7 @@ namespace FruityFramework.Core
         public static int CalculatePositionsMoved(int startPosition, int desiredPosition, int elementCount,
             bool reverse = false, int minPositionsToMove = 0)
         {
+            if (startPosition == desiredPosition && minPositionsToMove <= elementCount) return elementCount;
             var positionsMoved = 0;
             var currentPosition = startPosition;
             var offset = reverse ? -1 : 1;

@@ -6,6 +6,6 @@ namespace FruityFramework.Reels
         public ReelSpinDirection Direction { get; set; }
         public ReelSpinSpeed Speed { get; set; }
         public int MinRotations { get; set; }
-        public int StartDelay { get; set; }
+        public int SpinDelay { get; set; }
     }
 }

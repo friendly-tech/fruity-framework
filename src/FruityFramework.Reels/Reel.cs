@@ -57,13 +57,10 @@ namespace FruityFramework.Reels
             var currentIndex = IndexOf(CurrentPosition);
             var desiredIndex = IndexOf(options.Target);
 
-            if (options.StartDelay > 0) await Task.Delay(options.StartDelay);
-
-
             var postionsMoved = MathHelper.CalculatePositionsMoved(currentIndex, desiredIndex,
                 _segments.Count, direction == ReelSpinDirection.Reverse, minPositions);
 
-            var spinDelay = options.Speed.GetSpinSpeedSegmentDelay(postionsMoved);
+            var spinDelay = options.Speed.GetSpinSpeedSegmentDelay(postionsMoved, options.SpinDelay);
 
             for (var idx = 0; idx < postionsMoved; idx++)
             {
