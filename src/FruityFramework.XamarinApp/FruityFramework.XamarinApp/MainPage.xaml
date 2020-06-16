@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FruityFramework.XamarinApp"
+             x:Class="FruityFramework.XamarinApp.MainPage">
+
+    <StackLayout Padding="30">
+        <Button TextColor="Red"  Clicked="Button_OnClicked" Text="Init"></Button>
+
+        <Button TextColor="Red"  Clicked="Spin_OnClicked" Text="Spin"></Button>
+
+        <StackLayout Orientation="Horizontal">
+            <StackLayout>
+                <Label x:Name="LabelAbove1"></Label>
+                <Label x:Name="LabelMain1"></Label>
+                <Label x:Name="LabelBelow1"></Label>
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="LabelAbove2"></Label>
+                <Label x:Name="LabelMain2"></Label>
+                <Label x:Name="LabelBelow2"></Label>
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="LabelAbove3"></Label>
+                <Label x:Name="LabelMain3"></Label>
+                <Label x:Name="LabelBelow3"></Label>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

@@ -4,6 +4,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruityFramework.Core", "Fru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruityFramework.Core.Tests", "FruityFramework.Core.Tests\FruityFramework.Core.Tests.csproj", "{7E8826F5-87B4-4910-A6B3-F9E9311B3F1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruityFramework.Reels", "FruityFramework.Reels\FruityFramework.Reels.csproj", "{B13250A6-66B8-4572-8DE3-DE34EE8A4DC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruityFramework.Reels.Tests", "FruityFramework.Reels.Tests\FruityFramework.Reels.Tests.csproj", "{8873B76D-6679-4372-9B35-BFA00ECD6D33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruityFramework.XamarinApp", "FruityFramework.XamarinApp\FruityFramework.XamarinApp\FruityFramework.XamarinApp.csproj", "{E31E0394-F3B5-4048-8A27-3B19832392A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruityFramework.XamarinApp.iOS", "FruityFramework.XamarinApp\FruityFramework.XamarinApp.iOS\FruityFramework.XamarinApp.iOS.csproj", "{8D5F78B1-0F10-49AF-A2D3-A30873EEDB7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +26,21 @@ Global
 		{7E8826F5-87B4-4910-A6B3-F9E9311B3F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E8826F5-87B4-4910-A6B3-F9E9311B3F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E8826F5-87B4-4910-A6B3-F9E9311B3F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B13250A6-66B8-4572-8DE3-DE34EE8A4DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B13250A6-66B8-4572-8DE3-DE34EE8A4DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B13250A6-66B8-4572-8DE3-DE34EE8A4DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B13250A6-66B8-4572-8DE3-DE34EE8A4DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8873B76D-6679-4372-9B35-BFA00ECD6D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8873B76D-6679-4372-9B35-BFA00ECD6D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8873B76D-6679-4372-9B35-BFA00ECD6D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8873B76D-6679-4372-9B35-BFA00ECD6D33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31E0394-F3B5-4048-8A27-3B19832392A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31E0394-F3B5-4048-8A27-3B19832392A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31E0394-F3B5-4048-8A27-3B19832392A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31E0394-F3B5-4048-8A27-3B19832392A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D5F78B1-0F10-49AF-A2D3-A30873EEDB7A}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{8D5F78B1-0F10-49AF-A2D3-A30873EEDB7A}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{8D5F78B1-0F10-49AF-A2D3-A30873EEDB7A}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{8D5F78B1-0F10-49AF-A2D3-A30873EEDB7A}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 EndGlobal

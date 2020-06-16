@@ -5,9 +5,9 @@ namespace FruityFramework.Core
         /// <summary>
         /// Calculates the current position when offset is applied
         /// </summary>
-        /// <param name="startPosition"></param>
-        /// <param name="offset"></param>
-        /// <param name="count"></param>
+        /// <param name="startPosition">current position</param>
+        /// <param name="offset">offset</param>
+        /// <param name="elementCount">element count in array</param>
         /// <returns></returns>
         public static int CalculateOffsetPosition(int startPosition, int offset, int elementCount)
         {
