@@ -15,6 +15,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\FruityFramework.Core\FruityFramework.Core.csproj" />
+      <ProjectReference Include="..\..\FruityFramework.GameEngine\FruityFramework.GameEngine.csproj" />
       <ProjectReference Include="..\..\FruityFramework.Reels\FruityFramework.Reels.csproj" />
     </ItemGroup>
 </Project>

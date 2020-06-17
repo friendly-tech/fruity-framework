@@ -11,6 +11,7 @@ namespace FruityFramework.Reels
         private readonly IList<ReelSegment> _segments;
         public ReelSegment CurrentPosition { get; private set; }
         public ReelSegment StartPosition => _segments?[0];
+        public int ReelNumber { get; set; }
 
         public event EventHandler<ReelPositionChangedEventArgs> PositionChanged;
 
@@ -83,7 +84,8 @@ namespace FruityFramework.Reels
             PositionChanged?.Invoke(this,new ReelPositionChangedEventArgs
             {
                 Current = currentPosition,
-                Previous = previousPosition
+                Previous = previousPosition,
+                Reel = this
             });
         }
 

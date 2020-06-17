@@ -6,6 +6,7 @@ namespace FruityFramework.Reels
     {
         public ReelSegment Previous { get; set; }
         public ReelSegment Current { get; set; }
+        public Reel Reel { get; set; }
 
 
     }

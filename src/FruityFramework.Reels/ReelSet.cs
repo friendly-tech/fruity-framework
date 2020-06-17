@@ -9,9 +9,23 @@ namespace FruityFramework.Reels
     {
         public IReadOnlyList<Reel> Reels { get; }
 
+        public string Name { get; set; } = WellKnownReelSetNames.MainReelSet;
+        public event EventHandler<ReelPositionChangedEventArgs> PositionChanged;
+
         public ReelSet(IReadOnlyList<Reel> reels)
         {
             Reels = reels;
+            var num = 1;
+            foreach (var reel in reels)
+            {
+                reel.ReelNumber = num;
+                num++;
+                reel.PositionChanged += (sender, args) =>
+                {
+                    PositionChanged?.Invoke(this, args);
+                };
+
+            }
         }
 
         public async Task SpinAll(IReadOnlyList<ReelSpinOptions> reelSpinOptions)
