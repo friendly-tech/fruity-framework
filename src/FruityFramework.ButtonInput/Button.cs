@@ -1,15 +1,31 @@
+using System;
 using System.Threading.Tasks;
 
 namespace FruityFramework.ButtonInput
 {
     public class Button
     {
+        public event EventHandler<ButtonClickedEventArgs> Clicked;
+
+        public static Button Cancel()
+        {
+            return new Button { CommandName = WellKnownCommandNames.Cancel};
+        }
+
+        public static Button Start()
+        {
+            return new Button { CommandName = WellKnownCommandNames.Start};
+        }
         public string CommandName { get; set; }
         internal ButtonSet ButtonSet { get; set; }
 
-        public async Task Click()
+        public void Click(object commandArgument)
         {
-            await ButtonSet?.InputReceiver?.OnButtonClicked(this);
+            Clicked?.Invoke(this, new ButtonClickedEventArgs()
+            {
+                Button = this,
+                CommandArguments = commandArgument
+            });
         }
     }
 }

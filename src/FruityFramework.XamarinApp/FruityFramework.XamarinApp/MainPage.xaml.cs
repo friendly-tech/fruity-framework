@@ -42,9 +42,9 @@ namespace FruityFramework.XamarinApp
         }
 
 
-        private async void Spin_OnClicked(object sender, EventArgs e)
+        private void Spin_OnClicked(object sender, EventArgs e)
         {
-            await Fruity.ButtonSet.ClickButton(WellKnownCommandNames.Start);
+            Fruity.ButtonSet.ClickButton(WellKnownCommandNames.Start);
         }
 
         private async void Button_OnClicked(object sender, EventArgs e)

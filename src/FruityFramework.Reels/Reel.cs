@@ -54,7 +54,7 @@ namespace FruityFramework.Reels
         {
             var direction = options.Direction.CheckForRandom();
             var forwardBackOffset = direction == ReelSpinDirection.Forward ? 1 : -1;
-            var minPositions = options.MinRotations * _segments.Count;
+            var minPositions = (int)Math.Ceiling(options.MinRotations * _segments.Count);
             var currentIndex = IndexOf(CurrentPosition);
             var desiredIndex = IndexOf(options.Target);
 

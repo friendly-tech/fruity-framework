@@ -45,7 +45,7 @@ namespace FruityFramework.Reels
                 Direction = ReelSpinDirection.Forward,
                 Speed = ReelSpinSpeed.Normal,
                 Target = r,
-                MinRotations = 1,
+                MinRotations = 0.5, // At least half a reel to spin
                 SpinDelay = i * 400
             });
             await SpinAll(optionsList.ToList().AsReadOnly());
